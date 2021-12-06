@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GestionCompteActivity">
+
+    <TextView
+        android:id="@+id/compteDE"
+        android:textSize="28sp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Votre compte" />
+
+    <LinearLayout
+        android:id="@+id/layoutNomPre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/compteDE"
+        android:layout_marginTop="34dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/idGestCompte"
+            android:textSize="28sp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID : " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/nomGestCompte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom : "
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/nomGestCompteEditT"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/prenomGestCompte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prénom : "
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/prenomGestCompteEditT"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50sp"
+        android:layout_below="@+id/layoutNomPre"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Score1Math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meilleur score exo 1 de maths : "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Score2Math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meilleur score exo 2 de maths : "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Score1Gen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meilleur score exo 1 de culture : "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Score2Gen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meilleur score exo 2 de culture : "
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/retour"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/supprCompte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supprimer" />
+
+        <Button
+            android:id="@+id/modifCompte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=" Modifier " />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/retour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="21dp"
+        android:text="RETOUR" />
+
+
+</RelativeLayout>

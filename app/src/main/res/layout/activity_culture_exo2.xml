@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CultureExo2Activity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ex2Question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quelle est la capitale de la France ?"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="15sp"
+        />
+
+    <RadioGroup
+        android:id="@+id/ex2_radioGrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/ex2Rep1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paris" />
+
+        <RadioButton
+            android:id="@+id/ex2Rep2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lyon" />
+
+        <RadioButton
+            android:id="@+id/ex2Rep3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Madrid" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="Precedent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Précedent"/>
+        <Button
+            android:text="Suivant"
+            android:layout_marginLeft="5dp"
+            android:onClick="Suivant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/exercice2_rep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cliquez sur la bonne réponse et appuyez sur suivant"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/erreur"
+        android:textSize="28dp"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Erreur"
+        android:textColor="@color/design_default_color_error"/>
+</LinearLayout>

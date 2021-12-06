@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projet">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Projet">
+        <activity android:name=".CultureExo1FelActivity"></activity>
+        <activity android:name=".CultureExo1ErreurActivity" />
+        <activity android:name=".CultureExo2Activity" />
+        <activity android:name=".CultureExo1Activity" />
+        <activity android:name=".MathsEx2FelActivity" />
+        <activity android:name=".GestionCompteActivity" />
+        <activity android:name=".AddUserActivity" />
+        <activity android:name=".MathsEx2Selection" />
+        <activity android:name=".MathsEx2ErreursActivity" />
+        <activity android:name=".MathsEx2Activity" />
+        <activity android:name=".CultureActivity" />
+        <activity android:name=".MathsActivity" />
+        <activity android:name=".JouerActivity" />
+        <activity android:name=".MathsExo1Activity" />
+        <activity android:name=".MathsExo1ErreurActivity" />
+        <activity android:name=".MathsExo1FelActivity" />
+        <activity android:name=".MathsExo1MultiplicationAcitivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

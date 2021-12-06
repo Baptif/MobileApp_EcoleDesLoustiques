@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CultureExo1Activity">
+
+    <TextView
+        android:id="@+id/Exercice1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exercice 1"
+        android:textSize="32dp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/Exercice1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/index"
+            android:text="1/10"/>
+        <ImageView
+            android:id="@+id/drapeau"
+            android:src="@drawable/france"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="\?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:id="@+id/CEx1Res"/>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_below="@+id/line"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:onClick="Precedent"
+                android:layout_below="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Précedent"/>
+            <Button
+                android:text="Suivant"
+                android:layout_marginLeft="5dp"
+                android:onClick="Suivant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/mode_correction"
+            android:visibility="invisible"
+            android:textColor="@color/teal_700"
+            android:textSize="23dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode Correction Activé"/>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true">
+            <LinearLayout
+                android:id="@+id/indexT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
